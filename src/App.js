@@ -8,33 +8,33 @@ function App() {
   return (
     <>
     <header className="main_page_header">
-      < ColumnItem title={"Посещаемое"} news={news}>
+      <ColumnItem title={"Посещаемое"} news={news}>
       <h2>В Германии</h2>
       <h2>Рекомендуем</h2>
       <span>date</span>
-      </ ColumnItem>
+      </ColumnItem>
       <div className="advertise_block">
-        < Advertising />
+        <Advertising />
       </div>
     </header>
     <main>
-      < SearchWidget example={example}>
+      <SearchWidget example={example}>
         {data.banner}
-      </ SearchWidget>
+      </SearchWidget>
     </main>
     <aside>
       <div className="column">
-        < Weather />
-        < ColumnItem title={"Посещаемое"} news={visited} />
+        <Weather />
+        <ColumnItem title={"Посещаемое"} news={visited} />
       </div>
       <div className="column">
-        < ColumnItem title={"Карта германии"} news={transportSchedule} />
-        < ColumnItem title={"Телепрограмма"} news={tvSchedule}>
+        <ColumnItem title={"Карта германии"} news={transportSchedule} />
+        <ColumnItem title={"Телепрограмма"} news={tvSchedule}>
         <span className="broadcast">Эфир</span>
-        </ ColumnItem>
+        </ColumnItem>
       </div>
       <div className="column">
-        < ColumnItem title={"Эфир"} news={broadcast} />
+        <ColumnItem title={"Эфир"} news={broadcast} />
       </div>
     </aside>
     </>

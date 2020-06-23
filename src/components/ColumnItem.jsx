@@ -13,7 +13,7 @@ function ColumnItem(props) {
       {props.children}
     </div>
     <div className="link_list">
-      {props.news.map(o => <ListItem step={o} onRemove={() => handleRemove(o.id)} key={o.id}/>)}
+      {props.news.map(o => <ListItem step={o} onRemove={() => handleRemove(o.id)} key={o.id} />)}
     </div>
     </>
   );
